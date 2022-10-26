@@ -8,6 +8,7 @@ public class MainClass {
         System.out.println("Enter type of notification");
         String type=sc.nextLine();
         NotificationService notificationService=NotificationFactory.getNotificationService(type);
+        assert notificationService != null;
         notificationService.notifyUser();
     }
 }
