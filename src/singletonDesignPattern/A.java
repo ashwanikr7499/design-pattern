@@ -14,7 +14,7 @@ public class A {
         else
         {
             synchronized (A.class){
-                if(a!=null) return a; // try to comment this
+                if(a!=null) return a; // TODO: try to comment this
                 a=new A();
                 return a;
             }
